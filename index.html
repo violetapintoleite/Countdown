@@ -15,7 +15,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/dc79c7df1a.js" crossorigin="anonymous"></script>   
+<script src="https://kit.fontawesome.com/dc79c7df1a.js" crossorigin="anonymous"></script> 
 <script>
   // Set the date we're counting down to
   var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
@@ -68,63 +68,55 @@ function hideNonVisibleDivs() {
     }
   }
 }
-
- 
 </script>
-<style>
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,400;1,700&display=swap');
 
+body{
+  font-family: 'Roboto Mono', monospace; }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,400;1,700&display=swap');
+#demo{
+  font-size: 50px;
+  padding: initial;
+  padding-bottom: 30px;
+}
 
-  body{
-    font-family: 'Roboto Mono', monospace; }
-
-    span{
-    }
-
-  #demo{
-    font-size: 50px;
-    padding: initial;
-    padding-bottom: 30px;
-
-  }
-
-  
-  .collapsible{
- padding: 30px;
- cursor: pointer;
- font-size: 30px;
-   font-weight: lighter;
-   
-  }
-
+.collapsible{
+padding: 30px;
+cursor: pointer;
+font-size: 30px;
+ font-weight: lighter;
  
-  .first{
-    height: 150px;
-    background-color:#9FDCB2;
-    padding: 30px;
+}
 
-  }
-  .second{
-    background-color: #f3ffc6;
-    padding: 30px;
-  }
-  .third{
-    background-color: #FBD994;
-    padding: 30px;
+.first{
+  height: 150px;
+  background-color:#9FDCB2;
+  padding: 30px;
 
-  }
-  .fourth{
-    background-color: #F9BD7B;
-    padding: 30px;
+}
+.second{
+  background-color: #f3ffc6;
+  padding: 30px;
+}
+.third{
+  background-color: #FBD994;
+  padding: 30px;
 
-  }
-  .fifth{
-    background-color: #DA5542;
-    padding: 30px;
+}
+.fourth{
+  background-color: #F9BD7B;
+  padding: 30px;
 
-  }
-</style>
+}
+.fifth{
+  background-color: #DA5542;
+  padding: 30px;
+
+}
+ </style>
+
+
 
 </head>
 <body>
@@ -146,17 +138,11 @@ function hideNonVisibleDivs() {
  <div class="col">
   
 <div class="collapsible first row" onclick="toggleVisibility('content1')">
-
   Estamos quase a sair do LUX às 8 da manhã <span id="demo"></span> 
-  
-
 </div>
 <div id="content1" style="display: none;">
   <div class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aliquid blanditiis consequatur culpa ut beatae, tempore placeat animi unde ipsum, architecto facere voluptates iusto error perspiciatis voluptate nam est eveniet.</div>
 </div>
-
-
-
 <div class="collapsible second row" onclick="toggleVisibility('content2')"> Estamos quase a dar um abraço<span id="demo"></span> </div>
 <div id="content2" style="display: none;">
   <div class="second">
@@ -177,12 +163,7 @@ function hideNonVisibleDivs() {
   <div class="fifth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas impedit velit assumenda culpa, esse placeat enim consequuntur amet libero repudiandae voluptates quis tempora dolor perferendis nihil aspernatur neque et.</div>
 
 </div>
-
-
-
  </div>
-
-
 </body>
 </html>
 
