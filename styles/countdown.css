@@ -8,6 +8,23 @@
   --red: #DA5542;
 }
 
+body{
+  background-color: #222528;
+}
+
+a{
+  position: sticky;
+  float: right;
+  margin-right: 20px;
+  bottom: 60px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: solid 1px black;
+  background: #222528;
+  padding: 20px;
+  color: aliceblue;
+}
+
 #demo{
   font-size: 3rem;
     font-weight: 500;
@@ -65,9 +82,20 @@ font-weight: lighter;
   background-color: var(--red);
 }
 
-a{
-  position: absolute;
-  margin-bottom: 16px;
-  margin-right: 16px;
-  display: flex;
+@media (max-width: 859px) {
+
+  #content1, #content2, #content3, #content4, #content5{
+font-size: 1rem;}
+}
+
+@media (max-width: 580px) {
+
+  #demo{
+    font-size: 2rem;
+  }
+
+  #content1, #content2, #content3, #content4, #content5{
+font-size: 0.8rem;}
+
+
 }
