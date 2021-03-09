@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -17,88 +17,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/dc79c7df1a.js" crossorigin="anonymous"></script> 
 <link rel="stylesheet" href="styles/countdown.css">
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
-  
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-  
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-  
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
-  
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-    // Set the second date we're counting down to
-    var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
-  
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-  
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-  
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    // Display the result in the element with id="demo"
-    document.getElementById("second-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
-  
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("second-demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
+<script src="countdown.js"></script>
 
 
-// Open and close "more info" divs
-  var divs = ["content1", "content2", "content3", "content4", "content5"];
-var visibleDivId = null;
-function toggleVisibility(divId) {
-  if(visibleDivId === divId) {
-    //visibleDivId = null;
-  } else {
-    visibleDivId = divId;
-  }
-  hideNonVisibleDivs();
-}
-function hideNonVisibleDivs() {
-  var i, divId, div;
-  for(i = 0; i < divs.length; i++) {
-    divId = divs[i];
-    div = document.getElementById(divId);
-    if(visibleDivId === divId) {
-      div.style.display = "block";
-    } else {
-      div.style.display = "none";
-    }
-  }
-}
-</script>
  <style>
  
  </style>
