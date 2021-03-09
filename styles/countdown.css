@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,400;1,700&display=swap');
+
+:root{
+  --green: #9FDCB2;
+  --lime: #f3ffc6;
+  --yellow: #FBD994;
+  --orange: #F9BD7B;
+  --red: #DA5542;
+}
+
+#demo{
+  font-size: 3rem;
+    font-weight: 500;
+    padding: initial;
+}
+
+.collapsible{
+padding: 30px;
+cursor: pointer;
+font-weight: lighter;
+ font-size: 2rem;
+}
+
+.first{
+  background-color: var(--green);
+  height: 250px;
+
+}
+.second{
+  background-color: var(--lime);
+  height: 190px;
+}
+.third{
+  background-color: var(--yellow);
+  height: 190px;
+}
+.fourth{
+  background-color: var(--orange);
+  height: 190px;
+}
+.fifth{
+  background-color: var(--red);
+  height: 190px;
+}
+
+#content1, #content2, #content3, #content4, #content5{
+  height: 150px;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+#content1{
+  background-color: var(--green);
+}
+#content2{
+  background-color: var(--lime);
+}
+#content3{
+  background-color: var(--yellow);
+}
+#content4{
+  background-color: var(--orange);
+}
+#content5{
+  background-color: var(--red);
+}
+
+a{
+  position: absolute;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  display: flex;
+}
