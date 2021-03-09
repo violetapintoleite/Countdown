@@ -46,6 +46,35 @@
     }
   }, 1000);
 
+    // Set the second date we're counting down to
+    var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    document.getElementById("second-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
+  
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("second-demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+
 // Open and close "more info" divs
   var divs = ["content1", "content2", "content3", "content4", "content5"];
 var visibleDivId = null;
@@ -78,9 +107,9 @@ function hideNonVisibleDivs() {
  
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <h5 class="text-white h4">Estamos Quase Lá</h5>
-      <h6 class="text-white h6">Pensado pela Regina</h6>
-      <h6 class="text-white h6">Feito pela Violeta</h6>
+      <h5 class="text-white h4">#estamosquaselá</h5>
+      <h6 class="text-white h6">Pensado pela <a href="https://www.linkedin.com/in/regina-nogueira/" class="regina">Regina</a></h6>
+      <h6 class="text-white h6">Feito pela <a href="https://github.com/violetapintoleite" class="violeta">Violeta</a></h6>
     </div>
   </div>
   <nav class="navbar navbar-dark bg-dark">
@@ -91,7 +120,7 @@ function hideNonVisibleDivs() {
     </div>
   </nav>
     
- <div class="col">
+
   
 <div class="collapsible first row" onclick="toggleVisibility('content1')">
   Estamos quase a sair do LUX às 8 da manhã <span id="demo"></span> 
@@ -99,24 +128,24 @@ function hideNonVisibleDivs() {
 <div id="content1" style="display: none;">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aliquid blanditiis consequatur culpa ut beatae, tempore placeat animi unde ipsum, architecto facere voluptates iusto error perspiciatis voluptate nam est eveniet.
 </div>
-<div class="collapsible second row" onclick="toggleVisibility('content2')"> Estamos quase a dar um abraço<span id="demo"></span> </div>
+<div class="collapsible second row" onclick="toggleVisibility('content2')"> Estamos quase a dar um abraço<em id="second-demo">20dias</em> </div>
 <div id="content2" style="display: none;">
    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolorum tempora a, amet iste alias atque error facere, voluptatibus ipsum at. Qui ad hic similique quibusdam fuga nobis? Exercitationem, id?
 </div>
-<div class="collapsible third row" onclick="toggleVisibility('content3')"> Estamos quase a ir ao estádio </div>
+<div class="collapsible third row" onclick="toggleVisibility('content3')"> Estamos quase a ir ao estádio<em id="demo">20dias</em> </div>
 <div id="content3" style="display: none;">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam dolore, corporis commodi ratione quos adipisci neque accusantium, iusto eum quam officiis aliquam? Suscipit nostrum nesciunt consequuntur accusantium sunt recusandae.</div>
 
-<div class="collapsible fourth row" onclick="toggleVisibility('content4')"> Estamos quase a jantar fora com amigos </div>
+<div class="collapsible fourth row" onclick="toggleVisibility('content4')"> Estamos quase a jantar fora com amigos <em id="demo">20dias</em> </div>
 <div id="content4" style="display: none;">
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed reiciendis quo cupiditate saepe culpa! Nihil, repudiandae cum. Ipsum, repudiandae ullam eos doloremque provident laudantium inventore qui itaque incidunt, voluptatum ipsa!</div>
 
-<div class="collapsible fifth row" onclick="toggleVisibility('content5')"> Estamos quase a voltar ao teatro </div>
+<div class="collapsible fifth row" onclick="toggleVisibility('content5')"> Estamos quase a voltar ao teatro<em id="demo">20dias</em>  </div>
 <div id="content5" style="display: none;">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas impedit velit assumenda culpa, esse placeat enim consequuntur amet libero repudiandae voluptates quis tempora dolor perferendis nihil aspernatur neque et.</div>
-  <a href="#">Buy us a beer 🍻</a>
 
-</div>
+
+<a href="#" class="action">Buy us a beer 🍻</a>
 
 </body>
 </html>

@@ -8,27 +8,45 @@
   --red: #DA5542;
 }
 
-body{
-  background-color: #222528;
+html{
+  width: 100%;
 }
 
-a{
+body{
+  background-color: #222528;
+  width: 100%;
+}
+
+
+.regina{
+  text-decoration: none;
+ color: white;
+}
+
+.regina:hover{
+  color: var(--green);
+}
+
+.violeta{
+  text-decoration: none;
+  color: white;
+}
+
+.violeta:hover{
+  color: var(--lime);
+}
+
+.action{
   position: sticky;
   float: right;
   margin-right: 20px;
   bottom: 60px;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 50px;
   border: solid 1px black;
   background: #222528;
   padding: 20px;
   color: aliceblue;
-}
-
-#demo{
-  font-size: 3rem;
-    font-weight: 500;
-    padding: initial;
 }
 
 .collapsible{
@@ -45,19 +63,25 @@ font-weight: lighter;
 }
 .second{
   background-color: var(--lime);
-  height: 190px;
+  height: 200px;
 }
 .third{
   background-color: var(--yellow);
-  height: 190px;
+  height: 200px;
 }
 .fourth{
   background-color: var(--orange);
-  height: 190px;
+  height: 200px;
 }
 .fifth{
   background-color: var(--red);
-  height: 190px;
+  height: 200px;
+}
+
+#demo{
+  font-size: 3rem;
+    font-weight: 500;
+    padding: initial;
 }
 
 #content1, #content2, #content3, #content4, #content5{
@@ -65,6 +89,7 @@ font-weight: lighter;
   font-size: 1.5rem;
   padding: 15px;
 }
+
 
 #content1{
   background-color: var(--green);
