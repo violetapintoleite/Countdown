@@ -133,14 +133,19 @@ height: 300px;
 @media (max-width: 660px) {
 
   em{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .collapsible{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    height: 250px;
   }
 
-
+  #content1, #content2, #content3, #content4, #content5{
+    font-size: 0.7;
+    height: 300px;
+    padding: 10px;
+    }
 
 
 }
