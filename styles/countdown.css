@@ -10,7 +10,16 @@ body{
   font-family: 'Roboto Mono', monospace;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
 
+.fab{
+  font-weight: 400;
+  color: grey;
+  font-size: 30px;
+}
 .regina{
   text-decoration: none;
  color: white;
