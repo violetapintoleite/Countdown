@@ -27,7 +27,7 @@
   }, 1000);
 
     // Set the second date we're counting down to
-    var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+    var countDownDate = new Date("Mar 15, 2021 00:00:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -78,3 +78,4 @@ function hideNonVisibleDivs() {
     }
   }
 }
+
