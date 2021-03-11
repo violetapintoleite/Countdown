@@ -26,7 +26,7 @@ body{
 }
 
 .violeta:hover{
-  color: var(--red);
+  color: #DA5642;
 }
 
 .action{
@@ -71,11 +71,17 @@ font-weight: lighter;
   height: 200px;
 }
 
+.alert{
+  text-align: center;
+  color: white;
+  font-size: smaller;
+}
 
 
-#demo{
-  font-size: 3rem;
-    font-weight: 500;
+
+em{
+  font-size: 2.5rem;
+    font-weight: 400;
     padding: initial;
 }
 
@@ -113,8 +119,12 @@ font-size: 1rem;}
 
 @media (max-width: 580px) {
 
-  #demo{
+  em{
     font-size: 2rem;
+  }
+
+  .collapsible{
+    font-size: 1.7rem;
   }
 
   #content1, #content2, #content3, #content4, #content5{

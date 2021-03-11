@@ -1,5 +1,5 @@
-// Set the first date we're counting down to
-  var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+// Set the FIRST date we're counting down to
+  var countDownDate1 = new Date("Mar 15, 2021 00:00:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -8,7 +8,7 @@
     var now = new Date().getTime();
   
     // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+    var distance = countDownDate1 - now;
   
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -17,17 +17,17 @@
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
+    document.getElementById("first-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
   
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      document.getElementById("first-demo").innerHTML = "EXPIRED";
     }
   }, 1000);
 
-    // Set the second date we're counting down to
-    var countDownDate = new Date("Mar 15, 2021 00:00:00").getTime();
+    // Set the SECOND date we're counting down to
+    var countDownDate2 = new Date("Apr 5, 2021 00:00:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -36,7 +36,7 @@
     var now = new Date().getTime();
   
     // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+    var distance = countDownDate2 - now;
   
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -53,6 +53,69 @@
       document.getElementById("second-demo").innerHTML = "EXPIRED";
     }
   }, 1000);
+
+    // Set the THIRD date we're counting down to
+    var countDownDate3 = new Date("Apr 19, 2021 00:00:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate3 - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    document.getElementById("third-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
+  
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("third-demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+
+
+    // Set the FOURTH date we're counting down to
+    var countDownDate4 = new Date("May 3, 2021 00:00:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate4 - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    document.getElementById("fourth-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
+  
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("fourth-demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+
+
+
+
 
 
 // Open and close "more info" divs
