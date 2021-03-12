@@ -45,7 +45,7 @@
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="demo"
-    document.getElementById("second-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
+    document.getElementById("second-demo").innerHTML = days + "dias ";
   
     // If the count down is finished, write some text
     if (distance < 0) {
@@ -73,7 +73,7 @@
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="demo"
-    document.getElementById("third-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
+    document.getElementById("third-demo").innerHTML = days + "dias ";
   
     // If the count down is finished, write some text
     if (distance < 0) {
@@ -103,7 +103,7 @@
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="demo"
-    document.getElementById("fourth-demo").innerHTML = days + "dias " + hours + "h "+ minutes + "m " + seconds + "s ";
+    document.getElementById("fourth-demo").innerHTML = days + "dias ";
   
     // If the count down is finished, write some text
     if (distance < 0) {
