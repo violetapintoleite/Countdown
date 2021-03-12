@@ -12,6 +12,8 @@ body{
 
 a{
   color: white;
+
+  
 }
 
 .fab{
@@ -19,6 +21,7 @@ a{
   color: grey;
   font-size: 30px;
 }
+
 .regina{
   text-decoration: none;
  color: white;
