@@ -16,6 +16,8 @@ a{
   
 }
 
+
+
 .fab{
   font-weight: 400;
   color: grey;
@@ -122,17 +124,7 @@ em{
 
 
 
-@media (max-width: 812px) {
-
-  #content1, #content2, #content3, #content4, #content5{
-font-size: 0.7;
-height: 300px;
-}
-
-
-}
-
-@media (max-width: 660px) {
+@media (max-width: 800px) {
 
   em{
     font-size: 1.6rem;
