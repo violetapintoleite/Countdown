@@ -22,15 +22,19 @@
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("first-demo").innerHTML = "⚡️🚀";
+      document.getElementById("hey").innerHTML = `Hoje vamos dizer "Queria um café" e vamos ouvir "Queria ou quer?"`;
+    
     }
+
+     // If the count down is finished, change head line
+    
   }, 1000);
 
     // Set the SECOND date we're counting down to
     var countDownDate2 = new Date("Apr 5, 2021 00:00:00").getTime();
   
   // Update the count down every 1 second
-  var x = setInterval(function() {
+  var y = setInterval(function() {
   
     // Get today's date and time
     var now = new Date().getTime();
@@ -49,7 +53,7 @@
   
     // If the count down is finished, write some text
     if (distance < 0) {
-      clearInterval(x);
+      clearInterval(y);
       document.getElementById("second-demo").innerHTML = "EXPIRED";
     }
   }, 1000);
@@ -58,7 +62,7 @@
     var countDownDate3 = new Date("Apr 19, 2021 00:00:00").getTime();
   
   // Update the count down every 1 second
-  var x = setInterval(function() {
+  var w = setInterval(function() {
   
     // Get today's date and time
     var now = new Date().getTime();
@@ -77,7 +81,7 @@
   
     // If the count down is finished, write some text
     if (distance < 0) {
-      clearInterval(x);
+      clearInterval(w);
       document.getElementById("third-demo").innerHTML = "EXPIRED";
     }
   }, 1000);
@@ -88,7 +92,7 @@
     var countDownDate4 = new Date("May 3, 2021 00:00:00").getTime();
   
   // Update the count down every 1 second
-  var x = setInterval(function() {
+  var z = setInterval(function() {
   
     // Get today's date and time
     var now = new Date().getTime();
@@ -107,13 +111,12 @@
   
     // If the count down is finished, write some text
     if (distance < 0) {
-      clearInterval(x);
+      clearInterval(z);
       document.getElementById("fourth-demo").innerHTML = "EXPIRED";
     }
+
+   
   }, 1000);
-
-
-
 
 
 
