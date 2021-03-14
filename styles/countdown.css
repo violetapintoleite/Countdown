@@ -10,13 +10,6 @@ body{
   font-family: 'Roboto Mono', monospace;
 }
 
-a{
-  color: white;
-
-  
-}
-
-
 
 .fab{
   font-weight: 400;
@@ -119,6 +112,15 @@ em{
 }
 #content5{
   background-color: #DA5642;
+}
+
+
+#gov{
+  color: black;
+}
+
+#dgs{
+  color: white;
 }
 
 
