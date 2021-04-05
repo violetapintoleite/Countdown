@@ -54,7 +54,7 @@
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(y);
-      document.getElementById("second-demo").innerHTML = "EXPIRED";
+      document.getElementById("hey2").innerHTML = "É hoje que bebemos uma imperial no Oliveira";
     }
   }, 1000);
 
