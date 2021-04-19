@@ -82,7 +82,7 @@
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(w);
-      document.getElementById("hey3").innerHTML = "É hoje que vamos jantar fora!";
+      document.getElementById("hey3").innerHTML = "É hoje que recebemos aquela carta que estamos a pedir desde Janeiro. A de vinhos.";
     }
   }, 1000);
 
