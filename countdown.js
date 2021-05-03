@@ -112,7 +112,7 @@
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(z);
-      document.getElementById("fourth-demo").innerHTML = "EXPIRED";
+      document.getElementById("hey4").innerHTML = "É hoje que saimos para uma jantarada sem horas para voltar para casa.";
     }
 
    
